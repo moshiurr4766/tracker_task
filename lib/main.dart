@@ -7,6 +7,7 @@ import 'package:task/task_screen/task_11.dart';
 import 'package:task/task_screen/task_13.dart';
 import 'package:task/task_screen/task_15.dart';
 import 'package:task/task_screen/task_16.dart';
+import 'package:task/task_screen/task_17.dart';
 import 'package:task/task_screen/task_2.dart';
 import 'package:task/task_screen/task_3.dart';
 import 'package:task/task_screen/task_4.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/task16',
+      initialRoute: '/task17',
       routes: {
         '/task1': (context) => const Task1(),
         '/task2': (context) => const Task2(),
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         '/task14': (context) => const Task14(),
         '/task15': (context) => const Task15(),
         '/task16': (context) => const Task16(),
+        '/task17': (context) => const Task17(),
       },
 
     );
