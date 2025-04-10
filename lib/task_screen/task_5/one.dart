@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class OneTask5 extends StatefulWidget {
-  const OneTask5({super.key});
+class Task5 extends StatefulWidget {
+  const Task5({super.key});
 
   @override
-  State<OneTask5> createState() => _OneTask5State();
+  State<Task5> createState() => _Task5State();
 }
 
-class _OneTask5State extends State<OneTask5> {
+class _Task5State extends State<Task5> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

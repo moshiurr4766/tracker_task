@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task/task_screen/home.dart';
 import 'package:task/task_screen/task12.dart';
 import 'package:task/task_screen/task14.dart';
 import 'package:task/task_screen/task_1.dart';
@@ -31,13 +32,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/task19',
+      initialRoute: '/',
       routes: {
+        '/': (context) => const HomePage(),
         '/task1': (context) => const Task1(),
         '/task2': (context) => const Task2(),
         '/task3': (context) => const Task3(),
         '/task4': (context) => const Task4(),
-        '/one': (context) => const OneTask5(),
+        '/task5': (context) => const Task5(),
         '/two': (context) => const TwoTask5(),
         '/task6': (context) => const Task6(),
         '/task7': (context) => const Task7(),
@@ -54,7 +56,11 @@ class MyApp extends StatelessWidget {
         '/task18': (context) => const Task18(),
         '/task19': (context) => const Task19(),
       },
-
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.white,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
     );
   }
 }
